@@ -39,7 +39,7 @@ export default function Footer() {
       </footer>
       <hr />
       <p style={{ textAlign: "center" }}>
-        Designed & developed by <b> Shreya </b> &copy; 2024
+        Designed & Developed by <b> Shreya </b> &copy; 2024
       </p>
     </>
   );
