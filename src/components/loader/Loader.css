@@ -1,0 +1,18 @@
+.loader-img{
+    margin-left: 85vh;
+}
+
+@media (max-width:768px){
+    .loader-img{
+        margin-left: 25vh;
+    }
+    
+}
+
+@media (max-width:486px){
+    .loader-img{
+        width: 40%;
+        margin-left: 12vh;
+    }
+    
+}

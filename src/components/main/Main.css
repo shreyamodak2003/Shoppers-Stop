@@ -1,0 +1,73 @@
+.swiper {
+    width: 90%;
+    margin: auto;
+    height: 300px;
+}
+.swiper-slide {
+    border: 2px dotted black;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    transition: 0.4s;
+}
+
+.swiper-slide > img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  object-fit: contain;
+
+}
+
+
+.swiper-slide-info{
+  background-color: rgba(0, 0, 0, 0.708);
+  position: absolute;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 5px;
+  height: 250px;
+}
+
+.swiper-slide:hover > .swiper-slide-info {
+  display: block;
+}
+
+.carousel-item > img {
+  height: 520px;
+  margin: auto;
+}
+
+.about-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-text{
+  margin-top: 50px;
+}
+
+.go-to-top{
+  position: fixed;
+  z-index: 99;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item > img {
+    height: 300px;
+  }
+  .about-main{
+    flex-direction: column;
+  }
+  .swiper-slide > img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 8px;
+    object-fit: contain;
+  }
+}

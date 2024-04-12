@@ -1,0 +1,115 @@
+.prod-img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+span {
+  color: grey;
+}
+
+.products-main {
+  width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.product-filter {
+  border: 1px solid;
+  height: 470px;
+  width: 20%;
+}
+
+.product-filter > p,.offcanvas-body > p {
+  border: 1px solid;
+  padding: 5px 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.product-filter > p:hover,.offcanvas-body > p:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.product-filter-mobile {
+  display: none;
+}
+
+.card {
+  cursor: pointer;
+}
+
+
+.product-card {
+  border: 1px solid;
+  width: 80%;
+}
+.product-card-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 7px;
+  height: 470px;
+  overflow: auto;
+}
+
+/* Target the scrollbar */
+.product-card-main::-webkit-scrollbar {
+  width: 10px;
+}
+
+.product-card-main::-webkit-scrollbar-track {
+  background: #ffffff; /* Color of the track */
+}
+
+.soloprod-img{
+    width: 350px;
+    margin-top: 22px;
+}
+
+
+@media (max-width:768px){
+    .product-card-main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 7px;
+      height: 470px;
+      overflow: auto;
+    }
+
+    .products-main {
+      width: 95%;
+      margin: auto;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-filter {
+      border: 1px solid;
+      height: auto;
+      width: 100%;
+      display: none;
+    }
+
+    .soloprod-img{
+        width: 300px;
+        margin-left: 70px;
+    }
+
+    .product-filter-mobile {
+      display: block;
+      cursor: pointer;
+    }
+}
